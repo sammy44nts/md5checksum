@@ -1,9 +1,9 @@
+<?php
 /**
  * md5checksum.php - compute and check MD5 message digest
  * 
  * author : Sammy Tahtah
  */
-<?php
 $options = getopt("c:", array("check:"));
 
 function md5_checksum($file) {
