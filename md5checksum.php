@@ -25,7 +25,7 @@ function read_filelist($filelist) {
    $line = md5_checksum($path);
    if (!empty($line)) {
      if (!strcmp($md5hash, substr($line, 0, strpos($line, "  "))))
-       echo $path." : OK ";
+       echo $path.": OK ";
      else
        echo "\r\n[FAIL] ".$path."\r\n";
    }
