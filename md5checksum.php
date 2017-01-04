@@ -41,7 +41,7 @@ function read_array_filelist($files) {
   }
 }
 
-if (isset($argv[1]) && is_file($argv[1]))
+if (isset($argv[1]) && empty($options))
   echo md5_checksum($argv[1])."\n";
 elseif (!empty($options) && (!empty($options['c']) ||
 	  !empty($options['check']))) {
